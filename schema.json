@@ -1,0 +1,43 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "budibase-component-microphone",
+    "friendlyName": "Microphone",
+    "description": "Allows users to record voice clips and download the result in browser.",
+    "icon": "VoiceOver",
+    "settings": [
+      {
+        "type": "boolean",
+        "key": "disabled",
+        "label": "Disabled"
+      },
+      {
+        "type": "text",
+        "key": "filename",
+        "label": "Filename",
+        "defaultValue": "recording"
+      },
+      {
+      "type": "select",
+      "label": "Audio Format",
+      "key": "type",
+      "options": [
+        {
+          "label": "MP3",
+          "value": "audio/mpeg"
+        },
+        {
+          "label": "OGG",
+          "value": "audio/ogg"
+        },
+        {
+          "label": "WAV",
+          "value": "audio/wav"
+        }
+      ],
+      "defaultValue": "audio/wav"
+      }
+    ]
+  }
+}
